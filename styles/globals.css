@@ -14,3 +14,31 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.container {
+  background-color: #021e33;
+  height: 100%;
+  width: 100%;
+}
+
+.charts-container {
+  display: flex;
+}
+
+.charts-container-title {
+  display: flex;
+  padding: 0rem 1rem;
+  color: #fff;
+  gap: 0.625rem;
+  width: 100%;
+}
+
+.last-title {
+  margin-left: auto;
+  margin-top: 2.375rem;
+  color: #ff00ff;
+}
+
+.icon {
+  padding: 1.875rem;
+}
