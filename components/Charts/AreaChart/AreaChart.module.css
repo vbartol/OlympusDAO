@@ -1,13 +1,18 @@
 .container {
-  width: 100%;
   background-color: #19304c;
   border-radius: 0.9375rem;
   margin: 1.125rem;
   padding: 3.125rem;
   padding-top: 0;
 }
+@media only screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+  }
+}
 
 .title {
   color: #fff;
   text-align: center;
+  padding-top: 1.25rem;
 }
