@@ -17,7 +17,7 @@ interface AreaChartProps {
   stroke: string;
   color: string;
   title: string;
-  formatter: string;
+  formatter?: string;
   chartData: ChartValue[];
 }
 
@@ -26,7 +26,7 @@ const AreaChart: FC<AreaChartProps> = ({
   yaxisDataKey,
   axisDataKey,
   stroke,
-  formatter,
+  formatter = '',
   title,
   color,
 }) => (

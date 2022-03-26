@@ -53,7 +53,7 @@ const Charts = () => {
 
   const charts = [
     { title: "Asset APR (y)", data: assetAPR, formatter: "%" },
-    { title: "Asset TVL", data: reversedAssetTVL, formatter: "" },
+    { title: "Asset TVL", data: reversedAssetTVL },
   ];
 
   return (
@@ -70,7 +70,7 @@ const Charts = () => {
         {charts.map((chart, index) => (
           <AreaChart
             title={chart.title}
-            formatter={chart.formatter}
+            formatter={chart?.formatter}
             chartData={chart.data}
             key={index}
             axisDataKey="date"
